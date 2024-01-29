@@ -5,27 +5,33 @@
 
 #include <iostream>
 #include <string>
+#include <iomanip>
 using namespace std;
 
 int main()
 {
     cout << "M2T1" << endl;
+    cout << "Thank you for dining with us" << endl;
+    cout << "--------------------" << endl;
     //set up variables
     string meal = "Value Meal ";
     // all in $, except the percent
     double meal_price = 5.99;
     double tax_percent = 0.08;
-    double tax_amount = 9;
+    double tax_amount = 0;
     double total = 0;
 
     // do calculations
-
+    tax_amount = meal_price * tax_percent;
+    total = meal_price + tax_amount;
     // print the receipt
-    // TODO: make it line up, and fix deciamls
+    // print this once to set the deciamls to exactly 2
+    cout << fixed << setprecision(2);
+
     cout << meal    << "\t$" << meal_price << endl;
     cout << "tax"   << "\t\t$" << tax_amount << endl;
-    cout << "total" << "\t\t$" << total << endl;
-    cout << meal_price * tax_amount << endl;
+    cout << "--------------------" << endl;
+    cout << "total" << "\t\t$" <<  total << endl;
 
     return 0;
 }
