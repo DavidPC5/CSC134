@@ -29,9 +29,9 @@ int main()
     cout << fixed << setprecision(2);
 
     cout << meal    << "\t$" << meal_price << endl;
-    cout << "tax"   << "\t\t$" << tax_amount << endl;
+    cout << "Tax"   << "\t\t$" << tax_amount << endl;
     cout << "--------------------" << endl;
-    cout << "total" << "\t\t$" <<  total << endl;
+    cout << "Total" << "\t\t$" <<  total << endl;
 
     return 0;
 }

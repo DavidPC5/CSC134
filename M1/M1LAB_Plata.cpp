@@ -23,6 +23,7 @@ int main() {
     cout << "We have " << num_apples << " apples for sale." << endl;
     cout << "At a cost of $" << price_per_apple << " each." << endl;
     cout << "For a total cost of $" << total_price << endl;
+    // TODO: Make prices look "Correct" ($25.00)
 
     return 0;
 }
