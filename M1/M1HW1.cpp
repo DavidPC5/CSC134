@@ -28,7 +28,7 @@ int main()
     cout << "This is my favorite movie and I think my favorite scene is when Donnie meets frank" << endl;
     cout << "One of my favorite quotes is \"28 days, 6 hours , 42 minutes, 12 seconds. That is when the world will end.\"" << endl;
     cout << "Another of my favorite quotes is \"Why are you wearing that stupid man suit?\"" << endl;
-    cout << "The movie is more of a cult classic rather than a famous movie" << endl;
+    cout << "The movie is more of a cult classic rather than a famous movie." << endl;
     cout << "Throughout the movie there is a run theme about why do we exist and what happens at the end,"<< endl;
     cout << "this is because Donnie now knows that the world will end in 28 days." << endl << endl;
     
