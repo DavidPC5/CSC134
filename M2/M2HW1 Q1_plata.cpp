@@ -15,27 +15,23 @@ cout << "Question 1" << endl << endl;
 
 //Declare Variables
 string name;
-string ACNUM = "David Plata Cruz";
-double SAB, AOD, AOW, FAB;
-double AN = 247387;
+double SAB = 500, AOD = 100, AOW = 60, FAB;
 
 //Ask user for stuff duh
+cout << fixed << setprecision(2) << endl;
 cout << "Name? ";
-cin >> name;
-cout << "Starting Account Balance: $";
-cin >> SAB;
-cout << "Amount of Deposit: $";
-cin >> AOD;
-cout << "Amount of Withdrawl: $";
-cin >> AOW;
+getline (cin, name);
+cout << "Starting Account Balance: \t$" << SAB << endl;
+cout << "Amount of Deposit: \t\t$" << AOD << endl;
+cout << "Amount of Withdrawl: \t\t$" << AOW << endl;
 cout << "" << endl;
 //Do Calculations
 FAB = (SAB + AOD) - AOW;
 
 //Print output
-cout << "Account Name: " << ACNUM << endl;
-cout << "Account Number: " << AN << endl;
-cout << "Final Account Balance: $" << FAB << endl << endl;
+cout << "Account Name: " << name << endl;
+cout << "Account Number: 3242433" << endl;
+cout << "Final Account Balance: \t\t$" << FAB << endl << endl;
 
 return 0;
 }
