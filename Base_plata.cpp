@@ -2,7 +2,7 @@
 CSC 134
 Title
 David Plata Cruz
-Date
+2/17/2024
 */
 
 #include <iostream>
