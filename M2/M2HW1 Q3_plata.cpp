@@ -11,38 +11,23 @@ using namespace std;
 
 int main()
 {
-    cout << "General Crates Pricing System" << endl;
-    //declare the variables
-    const double COST_PER_CUBIC_FOOT = 0.3; //per cubic foot
-    const double CHARGE_PER_CUBIC_FOOT = 0.51; // $ per cubic foot
+    //Declare Variables
+    double PO, SPP, V, PL;
 
-    double length, width, height; // in feet
-    double volume; // in cubic feet
-    double cost, charge, profit; // $
+    //Ask user input
+    cout << "How many pizzas ordered? ";
+    cin >> PO;
+    cout << "How many slices per pizza? ";
+    cin >> SPP;
+    cout << "How many vistors are coming: ";
+    cin >> V;
 
-    // Get the crate dimensions
-    cout << "Enter length, width and height in feet. Press ENTER after each value." << endl;
-    cin >> length >> width >> height;
+    //Do Calculations
+    PL = (PO * SPP) - (V * 3);
 
-    // Calculate the volume
-    volume= length * width * height;
-
-    // Find the cost and price for that volume
-    cost= volume * COST_PER_CUBIC_FOOT;
-    charge = volume * CHARGE_PER_CUBIC_FOOT;
-
-
-    // Find the profit
-    profit = charge - cost;
-
-    // Output the answer
-    // use 2 decimal places
-    cout << fixed << setprecision(2);
-    cout << "That crate is: " << volume << " cubic ft" << endl;
-    cout << "That crate costs:$ " << cost << endl;
-    cout << "Charge to customer:  $" << charge << endl;
-    cout << "Our profit:     $" << profit << endl;
-
+    //Print output
+    cout << "Everyone gets 3 slices of pizzas" << endl;
+    cout << "There are " << PL << " pieces of pizza left." << endl << endl;
 
     return 0;
 }
