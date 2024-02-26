@@ -1,8 +1,8 @@
 /*
 CSC 134
-Title
+M3Lab1
 David Plata Cruz
-2/17/2024
+2/26/2024
 */
 
 #include <iostream>
