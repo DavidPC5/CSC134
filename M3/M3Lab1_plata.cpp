@@ -20,7 +20,7 @@ int main()
 
 //Ask the question
     cout << "What button do you choose 1, 2, or 3" << endl;
-    cout << "Type 1, 2, or 3: ";
+    cout << "Push 1, 2, or 3: ";
     cin >> choice;
 
     //Do if statements
@@ -50,16 +50,16 @@ int main()
 void choosebutton1()
 {
     cout << "You chose Button 1" << endl;
-    cout << "You win and get to go to Hawaii!" << endl;
+    cout << "You win ... a trip to Hawaii!" << endl;
 }
 
 void choosebutton2()
 {
     cout << "You chose Button 2" << endl;
-    cout << "You win and get a random street dog!" << endl;
+    cout << "You win ... a random street dog!" << endl;
 }
 void choosebutton3()
 {
     cout << "You chose Button 3" << endl;
-    cout << "You win and get toilet paper!" << endl;
+    cout << "You win ... toilet paper!" << endl;
 }
