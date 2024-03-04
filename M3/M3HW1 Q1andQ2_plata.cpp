@@ -59,7 +59,6 @@ int main()
     cout << "" << endl;
     cout << "Question 2: Receipt Calculator" << endl;
 
-    int choice2;
     double mealcost;
     double tip_percent= 0.15;
     double tip_amount = 0;
@@ -70,9 +69,9 @@ int main()
     cout << "How much will the meal be: $";
     cin >> mealcost;
     cout << "Please enter 1 if the order is dine in, 2 if it is to go: ";
-    cin >> choice2;
+    cin >> choice;
 
-    if (1 == choice2)
+    if (1 == choice)
     {
         cout << "Thank you for dining in with us." << endl;
         cout << "--------------------" << endl;
@@ -90,7 +89,7 @@ int main()
         cout << "--------------------" << endl;
         cout << "Total" << "\t\t$" <<  total << endl;
     }
-    else if (2 == choice2)
+    else if (2 == choice)
     {
        
        cout << "Here is your meal to go" << endl;
