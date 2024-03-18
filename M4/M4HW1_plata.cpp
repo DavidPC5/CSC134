@@ -10,14 +10,14 @@ using namespace std;
 
 int main()
 {
-    int number, times, sum;
+    int number, multiplier, sum;
     cout << "Enter a number: ";
     cin >> number;
 
-for (times = 1; times <= 10; times++)
+for (multiplier = 1; multiplier <= 10; multiplier++)
 {
-    sum = number * times;
-    cout << number << " * " << times << " = " << sum << endl;
+    sum = number * multiplier;
+    cout << number << " * " << multiplier << " = " << sum << endl;
 }
 
 
