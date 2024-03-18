@@ -10,22 +10,18 @@ using namespace std;
 
 int main()
 {
-    cout << "M4HW1_plata part one"
+    cout << "M4HW1_plata part one" << endl;
 
 
     // declare variables
-    int firstNum, secNum, answer;
+    int firstNum, answer;
     cout << "5 times table" << endl;
-
-    //Do calcuations
     firstNum = 5;
-    //secNum = 1;
-    answer = firstNum * secNum;
 
-for (int i = 1; i <= 12; i++)
+for (int secNum = 1; secNum <= 12; secNum++)
 {
-    answer = firstNum * i;
-    cout << firstNum << " times " << i << " is " << answer << endl;
+    answer = firstNum * secNum;
+    cout << firstNum << " times " << secNum << " is " << answer << endl;
 }
 
 return 0;
