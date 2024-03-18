@@ -9,7 +9,6 @@ using namespace std;
 int main()
 {
     cout << "M4Lab1" << endl;
-    //TODO: ask user for width and height
     int height;
     int width;
     cout << "Height: ";
