@@ -12,16 +12,14 @@ int main()
 {
     cout << "M4HW1_plata part one" << endl;
 
-
-    // declare variables
-    int firstNum, answer;
+    int firstNum = 5, secNum = 1, answer; 
     cout << "5 times table" << endl;
-    firstNum = 5;
 
-for (int secNum = 1; secNum <= 12; secNum++)
+while (secNum <= 12)
 {
     answer = firstNum * secNum;
     cout << firstNum << " times " << secNum << " is " << answer << endl;
+    secNum++;
 }
 
 return 0;
