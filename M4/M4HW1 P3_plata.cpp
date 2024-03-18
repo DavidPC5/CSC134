@@ -10,17 +10,24 @@ using namespace std;
 
 int main()
 {
-    cout << "M4HW1_plata part two" << endl;
+    cout << "M4HW1_plata part three" << endl;
+    cout << "For Gold" << endl;
 
-    int firstNum, secNum, answer;
-    cout << "Enter a number from 1 to 12: ";
-    cin >> firstNum;
+    int num, num2 = 1, sum;
+    cout << "Enter a number 1 to 12: ";
+    cin >> num;
 
-    for (secNum = 1; secNum <= 12; secNum++)
+    while (num > 12)
     {
-        answer = firstNum * secNum;
-        cout << firstNum << " * " << secNum << " = " << answer << endl;
+        cout << "Invalid Entry! " << "Enter a number 1 to 12: ";
+        cin  >> num;
+    }
 
+    while (num2 <= 12)
+    {
+        sum = num * num2;
+        cout << num << " * " << num2 << " = " << sum <<endl;
+        num2++;
     }
 
 return 0;
