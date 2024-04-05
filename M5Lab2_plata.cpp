@@ -55,5 +55,4 @@ void displayData(double length, double width, double area){
     cout << "Length: " << length << endl;
     cout << "Width: " << width << endl;
     cout << "Area: " << area << endl << endl;
-
 }
