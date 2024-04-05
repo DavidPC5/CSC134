@@ -49,9 +49,11 @@ double getArea(double length, double width){
 }
 
 void displayData(double length, double width, double area){
-
-    cout << length << endl;
-    cout << width << endl;
-    cout << area << endl;
+    cout << "" << endl;
+    cout << "Rectangle Data" << endl;
+    cout << "---------------" << endl;
+    cout << "Length: " << length << endl;
+    cout << "Width: " << width << endl;
+    cout << "Area: " << area << endl << endl;
 
 }
