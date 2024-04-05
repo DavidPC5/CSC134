@@ -11,20 +11,47 @@ using namespace std;
 // Declare (Write the prototypes for)
 double getLength();
 double getWidth();
-double getArea();
-double displayData();
+double getArea(double, double);
+void displayData(double, double, double);
 
 int main()
 {
-	
-   double length, width, area;     
+    // delcare variables
+    double length, width, area;     
+    
+    // variables that equal functions
+    length = getLength();
+    width = getWidth();
+    area = getArea(length, width);
+
+    //display all
+    displayData(length, width, area);
           
-   length = getLength();
-   width = getWidth();
-   area = getArea();
-   
-   // Display the rectangle's data.
-   displayData(length, width, area);
-          
-   return 0;
+    return 0;
+}
+
+double getLength(){
+    double l;
+    cout << "Enter the Length: ";
+    cin >> l;
+    return l;
+}
+
+double getWidth(){
+    double w;
+    cout << "Enter the Width: ";
+    cin >> w;
+    return w;
+}
+
+double getArea(double length, double width){
+    return length * width;
+}
+
+void displayData(double length, double width, double area){
+
+    cout << length << endl;
+    cout << width << endl;
+    cout << area << endl;
+
 }
