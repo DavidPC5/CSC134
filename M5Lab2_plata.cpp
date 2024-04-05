@@ -8,34 +8,23 @@ David Plata Cruz
 #include <iostream>
 using namespace std;
 
-//functions prototypes
-void getLength();
-void getWidth();
-void getArea();
-void displayData();
+// Declare (Write the prototypes for)
+double getLength();
+double getWidth();
+double getArea();
+double displayData();
 
 int main()
-{	
-    //delcare variables 
-    double length, width, area; 
+{
+	
+   double length, width, area;     
           
-    length = getLength();
-    width = getWidth()
-    area = getArea();
+   length = getLength();
+   width = getWidth();
+   area = getArea();
    
-    // Display the rectangle's data.
-    displayData(length, width, area);
+   // Display the rectangle's data.
+   displayData(length, width, area);
           
-    return 0;
+   return 0;
 }
-
-/*
-void getLength()
-
-void getWidth()
-
-void getArea()
-
-void displayData()
-
-*/
