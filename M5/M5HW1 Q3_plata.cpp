@@ -17,7 +17,7 @@ double Q3();
 int main(){
     
     //delcare variables
-    double quest1, quest2, quest3, quest4, quest5;
+    double quest1, quest2, quest3;
 
     //variables for functions
     quest1 = Q1();
@@ -26,7 +26,6 @@ int main(){
 
     return 0;
 }
-
 double Q1(){
     cout << "Question 1" << endl;
 
@@ -58,14 +57,25 @@ double Q1(){
 
     return 0;
 }
-
 double Q2(){
-    cout << "Question 2" << endl << endl;
+    cout << "Question 2" << endl;
+    double length, width, height, volume;
 
+    //ask for user input
+    cout << "Length: ";
+    cin >> length;
+    cout << "Width: ";
+    cin >> width;
+    cout << "Height: ";
+    cin >> height;
+
+    //calculate volume
+    volume = length * width * height;
+    
+    cout << "Volume of the Block is: " << volume << endl << endl;
 
     return 0;
 }
-
 double Q3(){
 
     cout << "Question 3" << endl;
