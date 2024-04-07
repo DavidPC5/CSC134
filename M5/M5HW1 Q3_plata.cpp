@@ -1,42 +1,70 @@
 /*
 CSC 134
-M5HW1- all ig
+M5HW1- bronze
 David Plata Cruz
 4/5/24
 */
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 //delcare function prototype
-//double Q1();
-//double Q2();
+double Q1();
+double Q2();
 double Q3();
-//double Q4();
-//double Q5();
-//void Q6();
 
 int main(){
     
     //delcare variables
     double quest1, quest2, quest3, quest4, quest5;
 
-    string name;
-    cout << "what? " << endl;
-    cin >> name;
     //variables for functions
-    //Q1();
-   // Q2();
+    quest1 = Q1();
+    quest2 = Q2();
     quest3 = Q3();
-    //Q4();
-    //Q5();
 
-    //menu for all the questions
-   //Q6(Q1(), Q2(), Q3(), Q4(), Q5() );
-   
     return 0;
 }
 
+double Q1(){
+    cout << "Question 1" << endl;
+
+    //declare variables
+    string month1, month2, month3;
+    double rain1, rain2, rain3, average;
+
+    //ask user for input
+    cout << "Enter month: "; 
+    cin >> month1;
+    cout << "Enter rainfall for " << month1 << ": ";
+    cin >> rain1;
+
+    cout << "Enter month: "; 
+    cin >> month2;
+    cout << "Enter rainfall for " << month2 << ": ";
+    cin >> rain2;
+
+    cout << "Enter month: "; 
+    cin >> month3;
+    cout << "Enter rainfall for " << month3 << ": ";
+    cin >> rain3;
+
+    cout << fixed << setprecision(2);
+    average = (rain1+rain2+rain3)/3;
+
+    cout << "The average rainfall for " << month1 << ", " << month2 
+    << ", and " << month3 << " is " << average << " inches." << endl << endl;
+
+    return 0;
+}
+
+double Q2(){
+    cout << "Question 2" << endl << endl;
+
+
+    return 0;
+}
 
 double Q3(){
 
@@ -80,5 +108,7 @@ double Q3(){
             cout << "Please enter in only numbers (1-10)" << endl;
             break;
     }
+
+    cout << "" << endl;
     return 0;
 }
