@@ -1,6 +1,6 @@
 /*
 CSC 134
-M5HW1- Q3
+M5HW1- all ig
 David Plata Cruz
 4/5/24
 */
@@ -8,8 +8,39 @@ David Plata Cruz
 #include <iostream>
 using namespace std;
 
-int main(){
+//delcare function prototype
+//double Q1();
+//double Q2();
+double Q3();
+//double Q4();
+//double Q5();
+//void Q6();
 
+int main(){
+    
+    //delcare variables
+    double quest1, quest2, quest3, quest4, quest5;
+
+    string name;
+    cout << "what? " << endl;
+    cin >> name;
+    //variables for functions
+    //Q1();
+   // Q2();
+    quest3 = Q3();
+    //Q4();
+    //Q5();
+
+    //menu for all the questions
+   //Q6(Q1(), Q2(), Q3(), Q4(), Q5() );
+   
+    return 0;
+}
+
+
+double Q3(){
+
+    cout << "Question 3" << endl;
     int num;
     cout << "Enter a number (1 - 10): ";
     cin >> num;
@@ -49,6 +80,5 @@ int main(){
             cout << "Please enter in only numbers (1-10)" << endl;
             break;
     }
-
     return 0;
 }
