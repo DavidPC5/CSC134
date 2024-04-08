@@ -33,13 +33,13 @@ void part2(){
 
     //ask user for data for each day
     for (int count = 0; count < SIZE; count++){
-    cout << days[count] << " : ";
-    cin >> cars[count];
+        cout << days[count] << " : ";
+        cin >> cars[count];
     }
 
     //Now find the total
     for (int count = 0; count < SIZE; count++){
-    total += cars[count]; // add in each day's worth of cars
+        total += cars[count]; // add in each day's worth of cars
     }
     average = (double) total / SIZE;
     cout << "Total = " << total << " and average = " << average << endl;
@@ -50,12 +50,12 @@ void part2(){
     cout << "Histogram" << endl;
     cout << "_________________________________________" << endl;
     for (int i =0; i < SIZE; i++){
-    cout << days[i] << "\t";
-    cout << cars[i] << "\t";
+        cout << days[i] << "\t";
+        cout << cars[i] << "\t";
     //print the bar graph, one "|" per car
-    for (int j=0; j < cars[i]; j++){
-    cout << "|";
+        for (int j=0; j < cars[i]; j++){
+            cout << "|";
     }
-    cout << endl; // finish the line
+        cout << endl; // finish the line
     }
 }
