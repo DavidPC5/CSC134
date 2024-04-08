@@ -16,13 +16,25 @@ double Q3();
 
 int main(){
     
-    //delcare variables
-    double quest1, quest2, quest3;
+    // make a menu just cuz, (NOT doing question 6 this is just cuz)
+    int choice;
+    cout << "Choose a question from (1-3): ";
+    cin >> choice;
 
-    //variables for functions
-    quest1 = Q1();
-    quest2 = Q2();
-    quest3 = Q3();
+    switch(choice){
+        case 1:
+            Q1();
+            break;
+        case 2:
+            Q2();
+            break;
+        case 3:
+            Q3();
+            break;
+        default:
+            cout << "Invalid Entry! " << endl;
+            break;
+    }
 
     return 0;
 }
