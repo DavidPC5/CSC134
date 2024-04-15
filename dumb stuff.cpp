@@ -1,22 +1,20 @@
 #include <iostream>
 using namespace std;
 
-int main(){
-cout << "Question 2" << endl;
-    double length, width, height, volume;
+int main() {
 
-    //ask for user input
-    cout << "Length: ";
-    cin >> length;
-    cout << "Width: ";
-    cin >> width;
-    cout << "Height: ";
-    cin >> height;
+    const int SIZE = 5;
+    int id[SIZE];
+    double average[SIZE];
+    char grade[SIZE];
 
-    //calculate volume
-    volume = length * width * height;
-    
-    cout << "Volume of the Block is: " << volume << endl;
+    for (int i=0; i < SIZE; i++){
+        cout << "Student ID: " << id[i] << endl;
+        cout << " average: " << average[i] << endl;
+        cout << " grade: " << grade[i] << endl;
+    }
+
+
 
     return 0;
 }
