@@ -63,20 +63,58 @@ void vector_example(){
         cout << nums[i] << ",";
     }
 
-    cout << endl << endl;
+    cout << endl;
 
     // or use member acces
     for (int num: nums){
         cout << num << ",";
     }
-    cout << endl << endl;
+    cout << endl;
 
+    //show what the cap is
+    cout << "It can hold " << nums.capacity() << " before resizing";
+    cout << endl << endl;
 }
 
-
-
+// this shoud be up top
+struct Node {
+    int num; // the data
+    Node* next; // pointer to next node
+};
 
 
 void linked_list(){
+
     cout << "Example 3: Linked List" << endl;
+
+    Node* head = nullptr; // empty list
+
+    // now make some notes
+    Node first;
+    first.num = 1;
+    first.next = nullptr; // null pointer -- "nowhere"
+    Node second;
+    second.num = 2;
+    second.next = nullptr;
+    
+    //add the next node
+    Node third;
+    third.num = 3;
+    third.next = nullptr;
+
+    //print out the first node
+    cout << "first.num = " << first.num << endl;
+
+    // connect nodes 1 & 2
+    head = &first; // point to address of first
+    first.next = &second; // first points to second
+    second.next = &third; // second points to third
+
+    //Finally, walk the list and print each item
+    Node* probe = head; // probe is our temporary pointer 
+    while (probe != nullptr){
+        cout << "Next node: " << probe->num << endl;
+        probe = probe->next;
+    }
+    cout << "Reached the end of list" << endl;
 }
