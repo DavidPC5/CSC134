@@ -61,8 +61,10 @@ int main(){
     cout << "Name: " << lunch_place.getName() << endl;
     cout << "Rating: " << lunch_place.getRating() << endl;
     cout << "-----------------" << endl;
-
-
     
+    cout << "Dinner" << endl;;
+    Restaurant dinner_place = Restaurant("KFC", 4.9);
+    dinner_place.printInfo();
+        
     return 0;
 }
